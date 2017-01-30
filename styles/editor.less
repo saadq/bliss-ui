@@ -15,29 +15,23 @@ atom-text-editor[mini] {
     font-size: 1rem;
     color: @text-color;
     background-color: @input-background-color;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid @base-border-color;
 
     &.is-focused {
-      border-bottom: 1px solid @base-border-color;
-      &::shadow {
-        .cursor {
-          display: block;
-        }
+      .cursor {
+        display: block;
       }
     }
-    &,// <-- Deprecated. The `&,` can be removed once the Shadow DOM can't be turned off in the settings.
 
-    &::shadow {
-      .placeholder-text {
-        color: @text-color-subtle;
-      }
+    .placeholder-text {
+      color: @text-color-subtle;
+    }
 
-      .selection .region {
-        background-color: @background-color-selected;
-      }
+    .selection .region {
+      background-color: @background-color-selected;
+    }
 
-      .cursor {
-        display: none;
-      }
+    .cursor {
+      display: none;
     }
 }

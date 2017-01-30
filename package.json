@@ -1,17 +1,17 @@
 {
-  "name": "shade-ui",
+  "name": "bliss-ui",
   "theme": "ui",
-  "version": "0.2.1",
-  "description": "Apex monochrome theme UI inspired by iA Writer",
+  "version": "0.1.0",
+  "description": "Ultra-minimalist theme.",
   "keywords": [
-    "apex",
+    "bliss",
     "monochrome",
     "ui",
-    "ia",
     "theme",
-    "writer"
+    "ocean",
+    "spacegray"
   ],
-  "repository": "https://github.com/apex/apex-ui",
+  "repository": "https://github.com/saadq/bliss-ui",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

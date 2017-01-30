@@ -6,6 +6,16 @@
     background-color: @panel-heading-background-color;
 }
 
+.panel-body {
+  a {
+    color: @bliss-blue;
+
+    &:hover {
+      color: @bliss-cyan;
+    }
+  }
+}
+
 .inset-panel {
     background-color: @inset-panel-background-color;
 
@@ -39,4 +49,12 @@ atom-panel.modal > .select-list {
 
 .inset-panel {
   border-radius: 0;
+}
+
+.deprecation-info.list-item span {
+  color: @bliss-cyan;
+}
+
+.deprecation-cop a {
+  color: @bliss-blue;
 }
