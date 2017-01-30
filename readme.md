@@ -1,5 +1,5 @@
 # bliss-ui
-Ultra-minimalist them optimized for ES6+ JavaScript.
+Ultra-minimalist theme optimized for ES6+ JavaScript.
 
 ![Bliss UI](http://i.imgur.com/9cSertf.png)
 
