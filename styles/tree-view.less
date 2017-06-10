@@ -14,6 +14,10 @@
   color: @text-color;
   background-color: @tree-view-background-color;
 
+  .project-root-header {
+    margin-top: -8px;
+  }
+
   .list-item {
     &::before {
       color: @bliss-gray;
@@ -27,4 +31,9 @@
       }
     }
   }
+}
+
+.atom-dock-resize-handle.left, .atom-dock-resize-handle.right {
+  background-color: @base-border-color;
+  width: 1px;
 }

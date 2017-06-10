@@ -1,10 +1,31 @@
-body {
-  .transition;
+.preview-pane.no-results .no-results-overlay {
+  li {
+    display: none;
+  }
+}
+
+.background-message::before {
+  position: absolute;
+  display: block;
+  content: 'Bliss';
+  font-size: 100px;
+  font-weight: lighter;
+  font-family: open sans;
+  background-size: 10%;
+  height: 100%;
+  width: 100%;
+  top: 35%;
+  left: 0;
+}
+
+.background-message .message {
+  display: none;
 }
 
 // Panes.
 atom-pane {
-  padding: 25px;
+  padding: 20px;
+  padding-bottom: 0;
 }
 
 // Mini Editor
