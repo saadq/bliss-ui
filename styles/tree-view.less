@@ -2,6 +2,31 @@
 // -------------------
 // Used to explore and open files in the current project.
 // Overrides: atom/tree-view
+
+// Remove the PROJECT header at the top of tree-view
+.left ul.list-inline.tab-bar.inset-panel {
+  display: none;
+}
+
+// Remove Git highlighting from tree view
+.status-modified,
+.status-added,
+.status-renamed,
+.status-removed {
+  color: inherit;
+  background-color: inherit;
+
+  &.directory > .list-item {
+    color: inherit !important;
+    background-color: inherit !important;
+  }
+
+  &.directory.selected > .list-item {
+    color: inherit !important;
+    background-color: inherit !important;
+  }
+}
+
 .tree-view-resizer {
   border-top: 1px solid @base-border-color;
   border-right: 1px solid @base-border-color;
@@ -13,9 +38,30 @@
 .tree-view {
   color: @text-color;
   background-color: @tree-view-background-color;
+  padding-top: 20px;
 
   .project-root-header {
     margin-top: -8px;
+  }
+
+  .icon-file-directory:before {
+    display: none;
+  }
+
+  // Decrease space between icons and folder/file names
+  .icon:before {
+    margin-right: 10px !important;
+  }
+
+
+  // Selected list item in tree view
+  // TODO: use a smaller selector...
+  .list-tree li:not(.list-nested-item):not(.tabBlender).selected::before, .list-group li:not(.list-nested-item):not(.tabBlender).selected::before, .list-tree li.list-nested-item > .list-item.selected::before, .list-group li.list-nested-item > .list-item.selected::before {
+    background-color: rgba(185, 197, 206, 0.05);
+  }
+
+  .icon-file-text, .icon {
+    color: #c0c0c0;
   }
 
   .list-item {
@@ -31,6 +77,11 @@
       }
     }
   }
+}
+
+.tree-view:focus
+.list-item::after {
+  background-color: rgba(185, 197, 206, 0.05) !important;
 }
 
 .atom-dock-resize-handle.left, .atom-dock-resize-handle.right {

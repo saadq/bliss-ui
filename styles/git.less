@@ -10,3 +10,16 @@
 .status-modified { color: @bliss-yellow; } // orange
 .status-removed  { color: @bliss-red; }   // red
 .status-renamed  { color: @bliss-blue; }    // blue
+
+atom-text-editor .gutter .line-number.git-line-removed, .gutter .line-number.git-line-removed {
+  border-left: 2px solid #bf616a;
+  padding-left: calc(0.5em - 2px);
+}
+
+atom-text-editor .gutter .line-number.git-line-removed:before, .gutter .line-number.git-line-removed:before {
+  content: none;
+}
+
+.icon:before {
+  color: #65737E;
+}
