@@ -7,7 +7,7 @@
 
 .command-palette .list-group .character-match,
 .fuzzy-finder .list-group .character-match {
-  color: @bliss-green;
+  color: oc-gray-5;
 }
 
 // List Group -------------------
@@ -20,7 +20,8 @@
 
     // We want to highlight the background of the list items because we dont know their size.
     &.selected {
-      color: @bliss-green;
+      color: @text-color-selected;
+      background-color: @emphasis-color;
       z-index: 15;
       &:before{ display: none; }
     }
@@ -31,7 +32,7 @@
 // List Tree -------------------
 .list-tree {
   .selected {
-    color: @text-color-selected;
+    color: white;
   }
 }
 
@@ -49,7 +50,7 @@
 .select-list {
   .character-match {
     font-weight: normal !important;
-    border-bottom: 1px solid @bliss-green;
+    border-bottom: 1px solid @emphasis-color;
     color: @bliss-white;
   }
 }
@@ -78,7 +79,7 @@ autocomplete-suggestion-list.select-list.popover-list {
       line-height: 2em;
 
       &.selected .character-match {
-        color: @bliss-green;
+        color: @emphasis-color;
       }
     }
   }
@@ -87,13 +88,13 @@ autocomplete-suggestion-list.select-list.popover-list {
     background: #3b404b;
 
     .icon {
-      color: @bliss-green;
+      color: @emphasis-color;
     }
   }
 }
 
 .select-list .selected .secondary-line {
-  color: @text-color-subtle;
+  color: oc-gray-2;
 }
 
 .list-group li:not(.list-nested-item) {

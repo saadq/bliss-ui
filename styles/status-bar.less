@@ -7,11 +7,14 @@
 .status-bar {
   font-size: @font-size;
   color: @text-color;
-  border-top: 1px solid @base-border-color;
   background-color: @tree-view-background-color;
-  opacity: 1;
   transition: opacity 150ms ease-out;
   z-index: 3; // Give a z-index to stop tree-view overflowing on top of it.
+  opacity: 0;
+
+  &:hover {
+    opacity: 1;
+  }
 
   .deprecation-number {
     color: @bliss-pink;
@@ -24,11 +27,4 @@
       border-bottom-color: @bliss-cyan;
     }
   }
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }

@@ -3,11 +3,6 @@
 // Used to explore and open files in the current project.
 // Overrides: atom/tree-view
 
-// Remove the PROJECT header at the top of tree-view
-.left ul.list-inline.tab-bar.inset-panel {
-  display: none;
-}
-
 // Remove Git highlighting from tree view
 .status-modified,
 .status-added,
@@ -39,10 +34,6 @@
   color: @text-color;
   background-color: @tree-view-background-color;
   padding-top: 20px;
-
-  .project-root-header {
-    margin-top: -8px;
-  }
 
   .icon-file-directory:before {
     display: none;
@@ -85,6 +76,7 @@
 }
 
 .atom-dock-resize-handle.left, .atom-dock-resize-handle.right {
-  background-color: @base-border-color;
-  width: 1px;
+  background-color: @base-background-color;
+  // background-color: @base-border-color;
+  width: 5px;
 }
