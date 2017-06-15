@@ -9,12 +9,8 @@
   color: @text-color;
   background-color: @tree-view-background-color;
   transition: opacity 150ms ease-out;
+  border-top: 1px solid @base-border-color;
   z-index: 3; // Give a z-index to stop tree-view overflowing on top of it.
-  opacity: 0;
-
-  &:hover {
-    opacity: 1;
-  }
 
   .deprecation-number {
     color: @bliss-pink;
