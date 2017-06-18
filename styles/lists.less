@@ -20,10 +20,15 @@
 
     // We want to highlight the background of the list items because we dont know their size.
     &.selected {
-      color: @text-color-selected;
+      color: lighten(@emphasis-color, 15%);
       background-color: @emphasis-color;
       z-index: 15;
       &:before{ display: none; }
+
+      .character-match {
+        color: darken(@emphasis-color, 15%);
+        border-color: @bliss-white;
+      }
     }
   }
 }
