@@ -13,15 +13,23 @@ $ apm install bliss-ui
 1. Go to your `Preferences` and click on `Themes` in the sidebar.
 2. Click on the `Syntax Theme` dropdown and change the value to `Bliss`.
 
-### Custom Settings
+### Customise Styles
+
+#### Hide title bar
 It is recommended to hide the title bar by using this setting in your `"core": { ... }` config.
 
 ```json
 "titleBar": "hidden"
 ```
 
-### Recommended Styles
-Miss Git status colors in the tree view? Just open your [tree-view.less](https://github.com/saadq/bliss-ui/blob/86871f01c937fe705e90d1abfcc498c543c44f45/styles/tree-view.less) and comment [these lines](https://gist.github.com/wyudong/ca880b93b3062adb57b9af433be239e0), and now you're done. 
+#### Disable Git highlighting
+To disable Git highlighting from the tree view, you can add the following lines in your stylesheet:
+
+```less
+.icon {
+    color: #c0c5ce;
+}
+```
 
 ### Related Projects
 * [Bliss Syntax](https://github.com/saadq/bliss-syntax) – A syntax theme that matches this UI theme.

@@ -41,3 +41,29 @@ atom-text-editor .gutter .line-number.git-line-removed:before, .gutter .line-num
 .github-FilePatchView-header .btn-group .btn.icon-code {
   margin-right: 10px;
 }
+
+// Enable Git highlighting in tree view
+.list-group,
+.list-tree {
+  li:not(.list-nested-item),
+  li.list-nested-item > .list-item {
+    color: @text-color;
+  }
+
+  .generate-list-item-status-color(@color, @status) {
+    li:not(.list-nested-item).status-@{status},
+    li.list-nested-item.status-@{status} > .list-item {
+      color: @color;
+    }
+    li:not(.list-nested-item).selected.status-@{status},
+    li.list-nested-item.selected.status-@{status} > .list-item {
+      color: @color;
+    }
+  }
+
+  .generate-list-item-status-color(@bliss-green, added);
+  .generate-list-item-status-color(@bliss-gray, ignored);
+  .generate-list-item-status-color(@bliss-yellow, modified);
+  .generate-list-item-status-color(@bliss-red, removed);
+  .generate-list-item-status-color(@bliss-orange, renamed);
+}
