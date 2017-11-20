@@ -34,6 +34,7 @@ To disable Git highlighting from the tree view, you can add the following lines 
 ### Related Projects
 * [Bliss Syntax](https://github.com/saadq/bliss-syntax) – A syntax theme that matches this UI theme.
 * [Termination](https://github.com/Fred-Barclay/Termination) – An integrated terminal for Atom. It comes with many different themes that you can configure in the settings, including a Bliss theme.
+* [Bliss Alfred](https://github.com/saadq/bliss-alfred) – A matching theme for [Alfred](https://www.alfredapp.com/).
 * [Hyper Material Spacegray](https://github.com/saadq/hyperterm-material-spacegray) – A matching theme for the [Hyper](https://hyper.is) terminal.
 
 ### Credits
